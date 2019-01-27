@@ -1,11 +1,18 @@
 {
   "name": "deal-safi",
   "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "npm": "6.4.1",
+    "node": "10.15.0"
+  },
   "description": "Deal Safi is an online shopping mall. Deal Safi users can host their online stores with us.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "dev": "webpack-dev-server --mode development --open --hot --config ./webpack.config.js",
+    "build": "webpack --mode production",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -18,7 +25,7 @@
   },
   "homepage": "https://github.com/codeplus254/Deal-Safi#readme",
   "dependencies": {
-    "@babel/preset-react": "^7.0.0",
+    "express": "^4.16.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1"
