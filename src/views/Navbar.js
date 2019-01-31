@@ -6,7 +6,6 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link to="/" className="navbar-brand text-success" >Deal Safi</Link>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
             <Link className="nav-link" to="">
