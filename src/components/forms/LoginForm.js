@@ -4,7 +4,6 @@ const LoginForm = ({handleSubmit }) =>(
             <form onSubmit={handleSubmit} className= "" >
             <div className="head">Login</div>
             <hr/>
-                
                  <div className="form-group">
                     <label htmlFor="email">Email</label>
                     <input
@@ -13,8 +12,7 @@ const LoginForm = ({handleSubmit }) =>(
                         placeholder="Enter email"
                         className="form-control"
                         required
-                        />
-                        
+                        />    
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password</label>
@@ -25,15 +23,11 @@ const LoginForm = ({handleSubmit }) =>(
                         className="form-control"
                         required
                         />
-                    
-                </div>
-                    
+                </div> 
                 <div className="form-group">
                       <button type="submit" className="btn btn-success login-button" >Sign Up</button>
                 </div>
-                
        </form>
 )
-
 
 export default LoginForm;

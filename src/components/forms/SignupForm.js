@@ -12,8 +12,7 @@ const SignupForm = ({handleSubmit }) =>(
                         placeholder="Enter username"
                         className="form-control"
                         required
-                        />
-                        
+                        />   
                 </div>
                  <div className="form-group">
                     <label htmlFor="email">Email</label>
@@ -23,8 +22,7 @@ const SignupForm = ({handleSubmit }) =>(
                         placeholder="Enter email"
                         className="form-control"
                         required
-                        />
-                        
+                        /> 
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password</label>
@@ -35,7 +33,6 @@ const SignupForm = ({handleSubmit }) =>(
                         className="form-control"
                         required
                         />
-                    
                 </div>
                     <div className="form-group">
                     <label htmlFor="cpassword">Confirm Password</label>
@@ -50,9 +47,7 @@ const SignupForm = ({handleSubmit }) =>(
                 <div className="form-group">
                       <button type="submit" className="btn btn-success login-button" >Sign Up</button>
                 </div>
-                
        </form>
 )
-
 
 export default SignupForm;
